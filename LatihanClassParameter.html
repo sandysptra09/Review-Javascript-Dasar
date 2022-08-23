@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Parameter</title>
+</head>
+<body>
+    <button onclick="pilih()">Klik Aku</button>
+    <button onclick="klik()">Klik</button>
+
+    <script>
+       function pilih(choice){
+           this.choice = prompt("Apa Minuman Kesukaanmu ?")
+           if (this.choice == "Siroup") {
+            document.write("Uh Menyegarkan" + "<br>" + "Pesanan Anda Sedang Dibuat Mohon tunggu sebentar !" )
+        } else if (this.choice == "Marjan"){
+            document.write("Seger Juga euy" + "<br>" + "Pesanan Anda Sedang Dibuat Mohon tunggu sebentar !")
+        } else if (this.choice == "Es Jeruk"){
+            document.write("Asem Tapi Seger" + "<br>" + "Pesanan Anda Sedang Dibuat Mohon tunggu sebentar !")
+        }  else if (this.choice == "Kolak"){
+            document.write("Manis euy" + "<br>" + "Pesanan Anda Sedang Dibuat Mohon tunggu sebentar !")
+        } else {
+            document.write("Minuman Anda Sedang Habis Atau Tidak Ada ! Mohon Pilih lagi !")
+        }
+       }
+      
+    // OOP Button
+       function klik(){
+           this.muncul = prompt("Apa Minum Kesukaanmu ?")
+           this.menusatu = "" 
+           this.menudua = ""
+           this.menutiga = ""
+           this.menuempat = ""
+           this.panggil = function(){             if (`{this.muncul} == menusatu`){
+                 document.write(`Menu Yang Asem Tapi Seger`)
+             } else if (`{this.muncul} == menudua`){
+                 document.write(`Menu Yang Mantap untuk Penghilang Dahaga`)
+             }
+           }
+       }
+
+       const choice = new klik()
+       choice.menusatu = "Es Jeruk";
+       choice.menudua = "Siroup";
+       choice.menutiga = "Kolak";
+       choice.menuempat= "Cendol";
+       choice.panggil()
+    </script>
+</body>
+</html>

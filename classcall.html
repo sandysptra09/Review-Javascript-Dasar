@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Parameter</title>
+</head>
+<body>
+    <script>
+        function Perusahaan(NamaDepan){
+            this.NamaDepan = NamaDepan;
+            this.sayHello = function(name){
+                console.info(`Hello ${name}, My name is ${this.NamaDepan}`)
+                document.write(`Hello ${name}, My name is ${this.NamaDepan}`)
+            }
+        }
+        function Manager(NamaDepan,NamaBelakang){
+            this.NamaBelakang = NamaBelakang;
+            Perusahaan.call(this, NamaDepan);
+        }
+        const saya = new Manager ("Sandy", "Saputra");
+        saya.sayHello("Septian")
+        console.info(saya);
+
+        // latihan class call
+        function Ayah (NamaDepan,NamaBelakang){
+            this.NamaDepan = NamaDepan;
+            this.NamaBelakang = NamaBelakang;
+            this.sayHello = function(nama){
+                document.write("<br>")
+                document.write(`Hallo,Nama Ayah Saya ${this.NamaDepan} ${this.NamaBelakang} <br>`)
+                document.write(`Nama Saya ${nama} ${this.NamaBelakang}`)
+            }
+        }
+        function Anak(NamaDepan,NamaBelakang){
+            this.NamaBelakang = NamaBelakang;
+            Ayah.call(this, NamaBelakang);
+        }
+        const panggil = new Ayah ("Yuuta","Saputra")
+        panggil.sayHello("Sandy")
+    </script>
+</body>
+</html>

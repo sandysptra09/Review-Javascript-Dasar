@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Aritmatik</title>
+</head>
+<body style="font-family: calibri;">
+   <script>
+       // Segitiga
+        function rumus (){
+            this.tinggi = 
+            this.lebar = 
+            this.luas =
+
+            this.hitung = function (){
+                document.write(`Tinggi Segitiga = ${this.tinggi}cm`)
+                document.write("<br>")
+                document.write(`Lebar Segitiga = ${this.lebar}cm`)
+                document.write("<br>")
+                document.write(`<h3>Luas Segitiga = ${this.luas}cm²</h3>`)
+                document.write("<hr>")
+            }
+        }
+
+        const segitiga= new rumus();
+        segitiga.tinggi = 200;
+        segitiga.lebar = 500
+        segitiga.luas = 200 / 2 * 500
+        segitiga.hitung()
+
+    // Persegi Panjang 
+    function rumus2(){
+        this.tinggi =
+        this.lebar = 
+        this.panjang =
+        this.luas = 
+        this.keliling = 
+
+        this.hitung2 = function(){
+            document.write(`Tinggi Persegi Panjang = ${this.tinggi}cm`)
+            document.write("<br>")
+            document.write(`Lebar Persegi Panjang = ${this.lebar}cm`)
+            document.write("<br>")
+            document.write(`Panjang Persegi Panjang = ${this.panjang}cm`)
+            document.write("<br>")
+            document.write(`<h3>Luas Persegi Panjang = ${this.luas}cm² , Keliling Persegi Panjang = ${this.keliling}cm²</h3>`)
+            document.write("<hr>")
+        }
+    }
+    const persjang = new rumus2();
+    persjang.tinggi = 28
+    persjang.lebar = 15
+    persjang.panjang = 30
+    persjang.luas = 30 * 15
+    persjang.keliling = 2 * (30 + 15)
+    persjang.hitung2()
+
+    // Persegi
+    function rumus3(){
+       this.sisi = 
+        this.luas = 
+        this.keliling = 
+
+        this.hitung3 = function(){
+            document.write(`Sisi Persegi  = ${this.sisi}cm`)
+            document.write("<br>")
+            document.write(`<h3>Luas Persegi  = ${this.luas}cm² , Keliling Persegi  = ${this.keliling}cm²</h3>`)
+            document.write("<hr>")
+        }
+    }
+    const persegi = new rumus3();
+    persegi.sisi = 18
+    persegi.luas = 18 * 18
+    persegi.keliling = 4 * 18
+    persegi.hitung3()
+
+    // Jajargenjang
+     function rumus4(){
+       this.alas =
+       this.tinggi = 
+       this.lebar = 
+       this.panjang = 
+       this.luas = 
+       this.keliling = 
+        
+
+        this.hitung4 = function(){
+            document.write(`Alas Jajargenjang  = ${this.alas}cm`)
+            document.write("<br>")
+            document.write(`Tinggi Jajargenjang  = ${this.tinggi}cm`)
+            document.write("<br>")
+            document.write(`Lebar Jajargenjang  = ${this.lebar}cm`)
+            document.write("<br>")
+            document.write(`Panjang Jajargenjang  = ${this.panjang}cm`)
+            document.write("<br>")
+            document.write(`<h3>Luas Jajargenjang  = ${this.luas}cm² , Keliling Jajargenjang  = ${this.keliling}cm²</h3>`)
+            document.write("<hr>")
+        }
+    }
+    const jargen = new rumus4();
+    jargen.alas = 12
+    jargen.tinggi = 16
+    jargen.lebar = 25
+    jargen.panjang = 29
+    jargen.luas = 12 * 16
+    jargen.keliling = 2 * (29 + 25)
+    jargen.hitung4()
+
+    // Belah Ketupat
+    function rumus5(){
+        this.diagonal1 =
+        this.diagonal2 =
+        this.sisi = 
+        this.luas = 
+        this.keliling = 
+
+        this.hitung5 = function(){
+            document.write(`Diagonal 1 Belah Ketupat= ${this.diagonal1}cm`)
+            document.write("<br>")
+            document.write(`Diagonal 2 Belah Ketupat = ${this.diagonal2}cm`)
+            document.write("<br>")
+            document.write(`Sisi Belah Ketupat = ${this.sisi}cm`)
+            document.write("<br>")
+            document.write(`<h3>Luas Belah Ketupat = ${this.luas}cm² , Keliling Belah Ketupat = ${this.keliling}cm²</h3>`)
+            document.write("<hr>")
+        }
+    }
+    const lahpat = new rumus5();
+    lahpat.diagonal1 = 28
+    lahpat.diagonal2 = 15
+    lahpat.sisi = 30
+    lahpat.luas = 30 * 15
+    lahpat.keliling = 2 * (30 + 15)
+    lahpat.hitung5()
+   </script>
+</body>
+</html>
